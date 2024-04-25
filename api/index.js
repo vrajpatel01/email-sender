@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const { APP_PORT } = require('./config')
-const errorHandler = require('./middleware/errorHandler.js')
-const router = require('./router')
+const { APP_PORT } = require('../config')
+const errorHandler = require('../middleware/errorHandler.js')
+const router = require('../router')
 
 app.use(express.json())
 const PORT = APP_PORT || 3000
